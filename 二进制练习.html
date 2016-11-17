@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 练习:
+1.将这些二进制数字10010(2)   1100(2)  10111(2)转成10进制数字
+八进制、十六进制
+10010(2) 
+1100(2) 
+10111(2)
+			 * */
+			/*
+			 parseInt 返回值 默认10进制数
+			 * */
+			
+			var num = 10111;
+			var s = parseInt(num,2);
+			var b = parseInt(num,2).toString(8);
+			var sl = parseInt(num,2).toString(16);
+		/*	console.log(s);
+			console.log(b);
+			console.log(sl);*/
+			
+//			console.log(num + ' 数值转换成：10进制:'+s + ' 8进制：'+b+' 16进制：'+sl)
+			
+			
+			/*
+			 1.将下列10进制数转成二进制
+				193    49    81   35
+			 * */
+			var sum = 35;
+			
+//			console.log(sum + ' 转换成二进制的值为：'+sum.toString(2))
+			
+			
+			/*
+			 2.将下列二进制数转成十进制数
+			100001001 
+			11001101
+			 * */
+			
+			var sum = 11001101;
+			console.log(sum +' 二进制转换十进制数：'+parseInt(sum,2));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

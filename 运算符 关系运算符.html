@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关系运算符</title>
+		<script type="text/javascript">
+			/*
+			 > 大于号
+			 < 小于号
+			 * */
+			/*
+			 返回值 布尔值 真 或者 假
+			 * */
+			var n1 = 1;
+			var n2 = 1;
+			n1 = 3;
+			var a = n1>n2;
+//			console.log(a);
+
+			var n1 = 'a';//97
+			var n2 = 'B';//66
+			
+			var a = n1>n2;
+			
+//			console.log(a);
+			
+			// 数值 与字符串之间比较
+			
+			var a = 'a';
+			//先把a字符串 转换成数值 然后再比较
+			console.log('a'==97);
+			// 比较 逐次 比较 先拿第一个字符 转换成ASCII 然后进行比较
+			// 再 提取第二个字符 进行比较
+//			console.log('ab' > 'ac');
+			// 字符串比较 如果第一个比较有结果的话 则直接返回结果 不再继续比较
+//			console.log('ab'>'bc');
+			// ????????
+			var a = '';
+			// ''空字符  转换成ASCII 值为 0
+			// c 的转换成ASCII 99
+			console.log('ab'>'abc');//false
+			
+			/*
+			 >= 大于等于
+			 * */
+			console.log(1<=1);
+			
+			/*
+			 <=
+			 数值之间比较
+			 字符串之间比较 先转换成ASCII
+			 * */
+//			console.log(1<=1);
+			
+			console.log('ab5'>='ab6');
+			
+			console.log(NaN == NaN);//false
+			console.log(NaN > NaN);//false
+			console.log(NaN < NaN);//false
+			console.log(Infinity == Infinity);
+			// ECMA-262 标准指定
+			// 值相等 返回 true 否则返回 false
+			console.log(null == undefined);//true
+			/*
+			 恒等与 类型要相等 值也要相等
+			 * */
+			console.log(null === undefined)//false
+			
+			/*
+			 不等于
+			 ! 取反 过程
+			 值相等 返回false
+			 值不相等 返回true
+			 * */
+			console.log(1 != 1);//false
+			
+			/*
+			 如果类型相等 值不相等 返回 true
+			 如果值相等 类型不相等 返回 true
+			 如果类型相等 值 也相等 返回 false
+			 * */
+			console.log(1!== 1);
+			
+			var a = 1;
+			var b = '1';
+			/*
+			 等于 比较过车过程 先转换成数值 再比较
+			 * */
+			console.log(a == b);//true
+			console.log(a != b);//false
+			
+			/*
+			 ! 取反
+			 * */
+			console.log(a === b);//false
+			console.log(a !== b);//true
+			
+			console.log(NaN == NaN);//false
+			console.log(NaN != NaN);//true
+			
+			var a = 1;
+			var b = 'a';
+			// 先把 b 字符串转换成数值 然后再进行比较
+			// NaN
+			console.log(a < b);
+			
+			// 空格 32 
+			console.log('abc'>'ab ');
+			
+			/*
+			 
+			 * 1. 两个操作数都是数值，则数值比较；  
+				2. 两个操作数都是字符串，则比较两个字符串对应的字符编码值；  
+				3. 两个操作数有一个是数值，则将另一个转换为数值，再进行数值比较；
+				'a' = > NaN
+			 * */
+			
+			var a = ' ';
+			var b = a.charCodeAt();
+			console.log(b)
+			
+			var b = 'a'&&1;
+			console.log(b)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

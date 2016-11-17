@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>逻辑运算符</title>
+		<script type="text/javascript">
+			/*
+			 与 或 非
+			 与 &&
+			 或 ||
+			 非 ！
+			 !=
+			 !==
+			 * */
+			
+			// 与 运算  要 两个标识符 都为真 返回真
+			// 如果有一个为假 返回假
+			
+			var d = false;
+			var c = 1;
+			
+			var a = d&&c;
+			
+			// 运算过程
+			// 先判断 与运算符 左边 表达是的值 是否为真 
+//			console.log(a);
+			
+			/*if(d&&c)
+			{
+				console.log('-----')
+			}*/
+			
+			var a = false;
+			var b = 3;
+			var c = a||b;
+			// 先a赋值给c 然后判断a是否为真 如果为真 则不在处理后面的数值
+			// 如果为假 则 继续计算后b 的值 并且把b值赋予c 
+			console.log(c);//1
+			
+			/*
+			 或运算 左右两个表达式 如果有一个为真 返回真
+			 如果都为假 返回假
+			 * */
+			if(a||b)
+			{
+				console.log('-----')
+			}
+			/*
+			 !  非 取反
+			 先对表达式 转换成布尔值 然后再进行取反
+			 * */
+			var a = !false;
+			a = !0;
+			a = !NaN;
+			a = !null;
+			a = !undefined;
+			a = !1;
+			console.log(a);
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 ++该运算符带一个操作数，将操作数的值加1
+			 --该运算符带一个操作数，将操作数的值减1
+			 * */
+			
+			var a = 1;
+//			a++;
+//			++a;
+//			console.log(a);//2
+			
+//			a--;
+//			--a;
+//			console.log(a);//1
+
+			var c = ++a;
+			console.log(a);
+			// ++ 在左边先自增 然后在赋值c
+//			console.log(c);
+
+			// ++ 在右边 先赋值 然后在自增
+			c = a++;//a = 2
+			console.log(c);//2
+			console.log(a);//3
+			
+			/*
+			 其他类型的一元运算  先转换成数值 然后再 做运算
+			 * */
+			
+			var a = '89';
+			a ++;// 代码执行完成 时 就已经自增完毕
+			console.log(a);//90
+			console.log(typeof(a));//number
+			
+			var a = 'a';
+			a++;
+			console.log(a);//NaN
+			
+			a = null;
+			a++;
+			console.log(a);
+			
+			a = undefined;
+			console.log(Number(undefined))
+			a++;
+			console.log(a);
+			
+			a = '89';
+			a--;
+			console.log(a);//88
+			
+			
+			a = 'a';
+			a--;
+			console.log(a);//NaN
+			
+			
+			a = null;
+			a--;
+			console.log(a);//-1
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
